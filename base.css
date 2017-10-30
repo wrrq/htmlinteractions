@@ -4,6 +4,8 @@ body {
     padding: 0;
 }
 
+[]
+
 h1 {
     margin:0;
     font-weight: normal;
@@ -12,6 +14,7 @@ h1 {
 h1,
 legend,
 label,
+a
 div {
     font-family: 'segoe ui', calibri, sans-serif;
 }
@@ -21,27 +24,14 @@ a:hover {
 }
 
 .page--helper-root,
-.page--helper-root a,
-.page--helper,
-.page--helper a {
-    color:#fff;
-}
-
-.page--helper-root,
-.page--helper-root a {
-    background-color: #2196f3;
-}
-
-.page--helper,
-.page--helper a {
-    background-color: #673ab7;
-}
-
-.page--helper-root,
 .page--helper,
 .element,
 .elements {
     padding: .5em 1em;
+}
+
+.element {
+    border-top:2px dashed #4caf50;
 }
 
 .sticky-0 {
@@ -56,6 +46,10 @@ a:hover {
     border: 1px solid #ff9800;
 }
 
+.element > * {
+    width:100%;
+}
+
 fieldset {
     border: 1px solid #4caf50;
     margin: 1em 0;
@@ -66,13 +60,14 @@ label {
 }
 
 label a {
-    color:#2196f3;
+    background-color:#2196f3;
+    color:#fff;
     text-decoration: none;
 }
 
 label a:hover {
-    text-decoration: none;
-    outline:1px solid #2196f3;
+    color:#2196f3;
+    background-color:#fff;
 }
 
 label a:before {
