@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const valueRandom = document.getElementById('value-random');
     if (valueRandom) {
-        valueRandom.addEventListener('click', clearValue);
+        valueRandom.addEventListener('click', setValueRandom);
     }
     
     const valueZoom = document.getElementById('zoom');
