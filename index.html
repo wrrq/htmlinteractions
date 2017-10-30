@@ -4,25 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>HTML Interactions Cheatsheet</title>
-        <meta name="description" content="">
+        <meta name="description" content="HTML Interactions Cheatsheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            .html, body { margin:0; padding: 0; }
-            h1, legend, label { font-family: 'segoe ui', calibri, sans-serif; font-size: .8em; }
-            .page--helper { background-color:#2196f3; }
-            .page--helper, .elements { padding:.5em 1em; }
-            .sticky-0 { position: sticky; top: 0; }
-            .elements div { margin:1em 0 0; padding:1em; display:block; border:1px solid #ff9800; }
-            fieldset { border:1px solid #4caf50; margin:1em 0; }
-            label { color:#9e9e9e; }
-        </style>
+        <link rel="stylesheet" type="text/css" href="base.css?f156a">
+        <script src="options.js?f156a"></script>
     </head>
     <body>
-        <div class="page--helper">
-            <h1>HTML Interactions Cheatsheet</h1>
-        </div>
-        <div class="page--helper sticky-0">
-            <input class="search" type="search" placeholder="query, eg.: [type*=date]" />
+        <div>
+            <div class="page--helper-root">
+                <h1>HTML Interactions Cheatsheet</h1>
+            </div>
+            <div class="page--helper-root sticky-0">
+                <!--<input id="search" class="search" type="search" placeholder="query, eg.: [type*=date]" />-->
+            </div>
         </div>
 
         <div class="elements">
@@ -104,7 +98,7 @@
                     <input id="input-type-number" type="number">
                 </div>
                 <div>
-                    <label for="input-type-password">Input (type: password)</label>
+                    <label for="input-type-password">Input (type: password) <a href="input-type-password.html"></a></label>
                     <input id="input-type-password" type="password">
                 </div>
                 <div>
@@ -204,10 +198,6 @@
                 <div>
                     <label for="button">Button</label>
                     <button id="button">I'm a Button</button>
-                </div>
-                <div>
-                    <label for="output">Output</label>
-                    <output id="output" />
                 </div>
                 <div>
                     <label for="textarea">Textarea</label>
